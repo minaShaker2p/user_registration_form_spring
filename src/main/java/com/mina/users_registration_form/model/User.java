@@ -13,7 +13,7 @@ public class User {
 
     private String firstName;
     private String lastName;
-    private Date birthday;
+    private String birthday;
     private int age;
     private String gender;
     private String city;
