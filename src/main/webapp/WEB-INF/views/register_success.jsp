@@ -5,25 +5,51 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Registration Success</title>
-<style type="text/css">
-    span {
-        display: inline-block;
-        width: 200px;
-        text-align: left;
-    }
-</style>
+    <link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div align="center">
+       <div class="container" align="center" >
         <h2>Registration Succeeded!</h2>
-        <span>First name:</span><span>${user.firstName}</span><br/>
-        <span>Last name:</span><span>${user.lastName}</span><br/>
-        <span>Age:</span><span>${user.age}</span><br/>
-        <span>City:</span><span>${user.city}</span><br/>
-        <span>Birthday:</span><span>${user.birthday}</span><br/>
-        <span>Gender:</span><span>${user.gender}</span><br/>
-        <span>Street:</span><span>${user.street}</span><br/>
-        <span>Postcode:</span><span>${user.postcode}</span><br/>
+        <br/> <br/> <br/>
+        <table class="table table-bordered table-dark">
+          <thead >
+            <tr>
+              <th scope="col">Field</th>
+              <th scope="col">Value</th>
+            </tr>
+          </thead
+         <tbody>
+            <tr>
+              <th scope="row">First name:</th>
+              <td>${user.firstName}</td>
+            </tr>
+            <tr>
+            <th scope="row">Last name:</th>
+            <td>${user.lastName}</td>
+            </tr>
+            <tr>
+            <th scope="row">Age:</th>
+            <td>${user.age}</td>
+            </tr>
+            <tr>
+            <th scope="row">Birthday:</th>
+            <td>${user.birthday}</td>
+            </tr>
+            <tr>
+            <th scope="row">Gender:</th>
+            <td>${user.gender}</td>
+            </tr>
+            <tr>
+            <th scope="row">Street:</th>
+            <td>${user.street}</td>
+            </tr>
+            <tr>
+            <th scope="row">Postcode:</th>
+            <td>${user.postcode}</td>
+            </tr>
+          </tbody>
+        </table>
     </div>
 </body>
 </html>
