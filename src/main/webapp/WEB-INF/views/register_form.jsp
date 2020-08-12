@@ -12,79 +12,64 @@
     <div class="container" >
     <br/>
     <br/>
-     <form align="left" action="register" method="post" modelAttribute="user">
-       <div class="form-group row" >
-         <label for="inputEmail3" class="col-sm-2 col-form-label" path="firstName">First Name</label>
-         <div class="col-sm-4">
-           <input type="text" class="form-control" id="inputEmail3"  path="firstName"  placeholder="First Name">
-         </div>
-       </div>
-        <div class="form-group row">
-                <label for="lastName" class="col-sm-2 col-form-label" path="lastName">Last Name</label>
-                <div class="col-sm-4">
-                  <input type="text" class="form-control" id="lastName" path="lastName"  placeholder="Last Name">
+
+    <form:form  align="center" action="register" method="post" modelAttribute="user">
+    <div class="form-group row" >
+                <form:label  class="col-sm-2 col-form-label" path="firstName">Full name:</form:label>
+                 <div class="col-sm-4">
+                <form:input class="form-control" path="firstName"/><br/>
                 </div>
-              </div>
-             <div class="form-group row">
-                          <label for="inputEmail3" class="col-sm-2 col-form-label" path="birthday">Birthday</label>
-                          <div class="col-sm-4">
-                            <input type="text" class="form-control" id="inputEmail3" path="birthday" placeholder="Birthday">
-                          </div>
-                        </div>
-
-       <div class="form-group row">
-         <label for="inputAge" class="col-sm-2 col-form-label" path="age" >Age</label>
-         <div class="col-sm-4">
-           <input type="number" class="form-control" id="inputAge" path="age"  placeholder="Age">
-         </div>
-       </div>
-
-        <div class="form-group row">
-                <label for="inputCity" class="col-sm-2 col-form-label">City</label>
-                <div class="col-sm-4">
-                  <input type="text" class="form-control" id="inputCity"  path="city" placeholder="City">
                 </div>
-              </div>
+                <br/>
+<div class="form-group row" >
+                 <form:label class="col-sm-2 col-form-label" path="lastName">Last name:</form:label>
+                 <div class="col-sm-4">
+                                <form:input class="form-control" path="lastName"/><br/>
+                                </div>
+                                </div>
 
-               <div class="form-group row">
-                              <label for="inputStreet" class="col-sm-2 col-form-label">Street</label>
-                              <div class="col-sm-4">
-                                <input type="text" class="form-control" id="inputStreet"  path="street" placeholder="Street">
-                              </div>
-                            </div>
+  <br/>
+ <div class="form-group row" >
+    <form:label class="col-sm-2 col-form-label" path="birthday">Birthday (yyyy-mm-dd):</form:label>
+     <div class="col-sm-4">
+                <form:input  class="form-control" path="birthday"/><br/>
+                </div>
+                </div>
+                  <br/>
+ <div class="form-group row" >
+                <form:label class="col-sm-2 col-form-label" path="city">City:</form:label>
+                <div class="col-sm-4">
+                <form:input class="form-control" path="city"/><br/>
+                </div>
+                </div>
+ <div class="form-group row" >
+                 <form:label class="col-sm-2 col-form-label" path="street">Street:</form:label>
 
-              <div class="form-group row">
-                              <label for="inputPostCode" class="col-sm-2 col-form-label" path="postcode">Postcode</label>
-                              <div class="col-sm-4">
-                                <input type="text" class="form-control" id="inputPostCode" path="postcode" placeholder="Postcode">
-                              </div>
-                            </div>
-       <fieldset class="form-group">
-         <div class="row">
-           <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
-           <div class="col-sm-10">
-             <div class="form-check">
-               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadioMale" path="gender" checked>
-               <label class="form-check-label" for="gridRadioMale" path="gender">
-                 Male
-               </label>
-             </div>
-             <div class="form-check">
-               <input class="form-check-input" type="radio" name="gridRadios" id="gridRadioFemale"  path="gender" value="Female">
-               <label class="form-check-label" for="gridRadioFemale" path="gender" >
-                 Female
-               </label>
-             </div>
-           </div>
-         </div>
-       </fieldset>
+                 <div class="col-sm-4">
+                 <form:input  class="form-control" path="street"/><br/>
+                 </div>
+                 </div>
+<div class="form-group row" >
+                <form:label  class="col-sm-2 col-form-label" path="postcode">Postcode:</form:label>
+                <div class="col-sm-4">
+                <form:input class="form-control" path="postcode"/><br/>
+                </div>
+                </div>
 
-       <div class="form-group row">
-         <div class="col-sm-10">
-           <button type="submit" value="submit" class="btn btn-primary">Sign in</button>
-         </div>
-       </div>
-     </form>
+<div class="form-group row" >
+
+                <form:label class="col-sm-2 col-form-label" path="gender">Gender:</form:label>
+                 <div class="col-sm-2">
+                <form:radiobutton path="gender" value="Male"/>Male
+                </div>
+                 <div class="col-sm-2">
+                <form:radiobutton path="gender" value="Female"/>Female<br/>
+                   </div>
+                </div>
+  <div class="form-group row" >
+                <form:button   class="btn btn-primary">Register</form:button>
+                </div>
+            </form:form>
     </div>
 </body>
 </html>
