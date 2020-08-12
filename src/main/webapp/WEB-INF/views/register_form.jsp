@@ -15,7 +15,7 @@
 
     <form:form  align="center" action="register" method="post" modelAttribute="user">
     <div class="form-group row" >
-                <form:label  class="col-sm-2 col-form-label" path="firstName">Full name:</form:label>
+                <form:label  class="col-sm-2 col-form-label" path="firstName">First name:</form:label>
                  <div class="col-sm-4">
                 <form:input class="form-control" path="firstName"/><br/>
                 </div>
@@ -27,6 +27,14 @@
                                 <form:input class="form-control" path="lastName"/><br/>
                                 </div>
                                 </div>
+
+
+  <div class="form-group row" >
+  <form:label class="col-sm-2 col-form-label" path="age">Age:</form:label>
+  <div class="col-sm-4">
+  <form:input  type="number" class="form-control" path="age"/><br/>
+  </div>
+  </div>
 
   <br/>
  <div class="form-group row" >

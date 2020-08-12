@@ -5,7 +5,7 @@
 <title>Spring Boot Form Handling Example</title>
 </head>
 <body>
-    <h1>Spring Boot Form Handling Example</h1>
+    <h1>Spring Boot Form Handling Demo</h1>
     <h2>Spring Form Tags with JSP</h2>
     <a href="/register">Click here</a>
 </body>
